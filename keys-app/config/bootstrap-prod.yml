@@ -1,0 +1,8 @@
+spring:
+  application:
+    name: siggi-ci-keys
+
+  cloud:
+    config:
+      uri: http://${CONFIGSERVER_SERVICE_HOST:localhost}:${CONFIGSERVER_SERVICE_PORT_WEB:8888}
+      fail-fast: true
